@@ -3,28 +3,38 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+
 }
 .global_section{
-    background-color: #fff;
-    margin: 30px 70px;
+    background-color: hsl(0, 0%, 81%);
 }
 
 .global_cards{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "card1 card1 card2 card5"
+        "card3 card4 card4 card5";
+    gap: 20px;
 }
 
+.card1 { grid-area: card1; }
+.card2 { grid-area: card2; }
+.card3 { grid-area: card3; }
+.card4 { grid-area: card4; }
+.card5 { grid-area: card5; }
+
 .card1{
+   grid-area: 1/1/2/3;
    margin: 0 40px;
    padding: 20px 30px;
-   width: 500px;
-   height: 200px;
-   background-color: blueviolet;
+   background-color: hsl(263, 55%, 52%);
    border-radius: 20px;
 
 }
 
 .card1_top{
+    color: #fff;
     display: flex;
     flex-direction: row;
 }
@@ -32,17 +42,181 @@
 .image_daniel{
     margin: 0 40px 0 0;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
     border: 3px solid #fff;
 }
 
 .card1_texts{
+    font-size: 15px;
     color: #fff;
     display: flex;
     flex-direction: column;
 }
 
 .card1 h3{
-  
+    font-size: 10px;
+    color: #fff;
+    padding: 10px 0 10px 0;
+}
+
+.card1 p{
+    font-size: 10px;
+    color: #fff;
+}
+
+.card2{
+   grid-area: 1/3/2/4;
+   background-color: hsl(217, 19%, 35%);
+   color: #fff;
+   border-radius: 20px;
+}
+
+.card2_top{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.image-jonathan{
+    margin: 0 40px 0 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+}
+
+.card2_texts{
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.card2 h3{
+    font-size: 10px;
+    color: #fff;
+    padding: 10px 0 10px 0;
+}
+
+.card2 p{
+    font-size: 10px;
+    color: #fff;
+}
+
+.card3{
+   grid-area: 2/1/3/2;
+   color: #000;
+   background-color: rgb(255, 255, 255);
+   border-radius: 20px;
+
+}
+
+.card3_top{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.image-jeanette{
+    margin: 0 40px 0 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+}
+
+.card3_texts{
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.card3 h3{
+    font-size: 10px;
+    color: #000;
+    padding: 10px 0 10px 0;
+}
+
+.card3 p{
+    font-size: 10px;
+    color: #000;
+}
+
+.card4{
+   grid-area: 2/2/3/4;
+   color: #000;
+   background-color: hsl(219, 29%, 14%);
+   border-radius: 20px;
+
+}
+
+.card4_top{  
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.image-patrick{
+    margin: 0 40px 0 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+}
+
+.card4_texts{
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.card4 h3{
+    font-size: 10px;
+    color: #fff;
+    padding: 10px 0 10px 0;
+}
+
+.card4 p{
+    font-size: 10px;
+   color: #fff;
+}
+
+.card5{
+   color: #000;
+   background-color: rgb(255, 255, 255);
+   border-radius: 20px;
+
+}
+
+.card5_top{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.image-kira{
+    margin: 0 40px 0 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+}
+
+.card5_texts{
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.card5 h3{
+    font-size: 10px;
+    color: #000;
+    padding: 10px 0 10px 0;
+}
+
+.card5 p{
+    font-size: 10px;
+   color: #000;
 }
